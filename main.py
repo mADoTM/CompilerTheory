@@ -2,19 +2,23 @@ import os
 from Parser import Parser
 
 prog = '''
+    /*
+    comment
+    */
     
-    var i SlavaString = 5;
-'''
-
-prog2 = '''
-var b SlavaString = 10;
-    do {
+    //another comment
+    
+    var i SlavaInt = 5;
+    var b SlavaInt = 10;
+    { slava_write(a); }
+    whilava(i < 10) {
         if(i >= 7)
-            logprint(i);
+            slava_write(i);
         i++;
-    } while(i < 10)
+    }
     var c SlavaString = "10";
 '''
+
 parser = Parser()
 res = parser.parse(prog)
 print(*res.tree, sep=os.linesep)
