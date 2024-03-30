@@ -22,7 +22,7 @@ class Parser:
         VAR_KW, FUNC_KW, RETURN_KW = pp.Keyword('var'), pp.Keyword('function'), pp.Keyword('return')
         INT_KW = pp.Keyword('SlavaInt').setName('SlavaInt')
         STRING_KW = pp.Keyword('SlavaString').setName('SlavaString')
-        IF_KW, ELSE_KW = pp.Keyword('if'), pp.Keyword('else')
+        IF_KW, ELSE_KW = pp.Keyword('hasbik'), pp.Keyword('else')
         FOR_KW, DO_KW, WHILE_KW = pp.Keyword('nefor'), pp.Keyword('dohast'), pp.Keyword('whilava')
         L_PAR, R_PAR = pp.Literal('(').suppress(), pp.Literal(')').suppress()
         L_BRACKET, R_BRACKET = pp.Literal('{').suppress(), pp.Literal('}').suppress()

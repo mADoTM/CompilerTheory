@@ -12,8 +12,9 @@ prog = '''
     var b SlavaInt = 10;
     { slava_write(a); }
     whilava(i < 10) {
-        if(i >= 7)
-            slava_write(i);
+        hasbik(i >= 7) {
+        slava_write(i);
+        }   
         i++;
     }
     var c SlavaString = "10";
